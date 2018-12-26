@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,81 +21,208 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7uo-NU-YtZ">
                                 <rect key="frame" x="32" y="36" width="311" height="566.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3bP-IE-Np2">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="K1y-Pc-KNh">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="162.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-N1-dLO">
-                                                <rect key="frame" x="0.0" y="0.0" width="311" height="38.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sf-gN-iNW">
-                                                <rect key="frame" x="0.0" y="46.5" width="311" height="29"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="31u-EN-kTK">
-                                                <rect key="frame" x="0.0" y="83.5" width="311" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3bP-IE-Np2">
+                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="162.5"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-600" maxValue="600" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-gD-MUl">
-                                                        <rect key="frame" x="-2" y="0.0" width="315" height="31"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-N1-dLO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sf-gN-iNW">
+                                                        <rect key="frame" x="0.0" y="46.5" width="147.5" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="31u-EN-kTK">
+                                                        <rect key="frame" x="0.0" y="83.5" width="147.5" height="30"/>
+                                                        <subviews>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-600" maxValue="600" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-gD-MUl">
+                                                                <rect key="frame" x="-2" y="0.0" width="151.5" height="31"/>
+                                                                <color key="tintColor" red="0.1764705882352941" green="0.66666666666666663" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <connections>
+                                                                    <action selector="changePitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="wtV-Ya-u7d"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0M-zn-gfp">
+                                                        <rect key="frame" x="0.0" y="121.5" width="147.5" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                         <color key="tintColor" red="0.1764705882352941" green="0.66666666666666663" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Reset"/>
                                                         <connections>
-                                                            <action selector="changePitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="wtV-Ya-u7d"/>
+                                                            <action selector="resetPitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9N3-LZ-FnW"/>
                                                         </connections>
-                                                    </slider>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0M-zn-gfp">
-                                                <rect key="frame" x="0.0" y="121.5" width="311" height="41"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="tintColor" red="0.1764705882352941" green="0.66666666666666663" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Reset"/>
-                                                <connections>
-                                                    <action selector="resetPitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9N3-LZ-FnW"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hoX-hP-9EV">
+                                                <rect key="frame" x="163.5" y="0.0" width="147.5" height="162.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-J4-keW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wl-Uu-Tp5">
+                                                        <rect key="frame" x="0.0" y="46.5" width="147.5" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EUG-Mf-yfj">
+                                                        <rect key="frame" x="0.0" y="83.5" width="147.5" height="30"/>
+                                                        <subviews>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-0P-IbT">
+                                                                <rect key="frame" x="-2" y="0.0" width="151.5" height="31"/>
+                                                                <color key="tintColor" red="0.59607843137254901" green="0.45882352941176469" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <connections>
+                                                                    <action selector="changeRate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Il4-xH-PlL"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLG-uX-dL5">
+                                                        <rect key="frame" x="0.0" y="121.5" width="147.5" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.59607843140000005" green="0.45882352939999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Reset"/>
+                                                        <connections>
+                                                            <action selector="resetRate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezT-7L-eDt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hoX-hP-9EV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jl7-dW-kxa">
                                         <rect key="frame" x="0.0" y="178.5" width="311" height="162.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-J4-keW">
-                                                <rect key="frame" x="0.0" y="0.0" width="311" height="38.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wl-Uu-Tp5">
-                                                <rect key="frame" x="0.0" y="46.5" width="311" height="29"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EUG-Mf-yfj">
-                                                <rect key="frame" x="0.0" y="83.5" width="311" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xgz-ke-zTr">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="162.5"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-0P-IbT">
-                                                        <rect key="frame" x="-2" y="0.0" width="315" height="31"/>
-                                                        <color key="tintColor" red="0.59607843137254901" green="0.45882352941176469" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OH-ZR-JDY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO8-AZ-OXY">
+                                                        <rect key="frame" x="0.0" y="46.5" width="93" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="R8P-kK-bh2">
+                                                        <rect key="frame" x="0.0" y="83.5" width="93" height="30"/>
+                                                        <subviews>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-24" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="hii-go-BVi">
+                                                                <rect key="frame" x="-2" y="0.0" width="97" height="31"/>
+                                                                <color key="tintColor" red="0.91782909631729126" green="0.40127268173971897" blue="0.39788254032538539" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <connections>
+                                                                    <action selector="changeLows:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZNS-p1-uzN"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                        <color key="tintColor" red="1" green="0.33896315938981003" blue="0.32462633116963779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWc-fq-laQ">
+                                                        <rect key="frame" x="0.0" y="121.5" width="93" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.91782909629999998" green="0.40127268170000002" blue="0.39788254029999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Reset"/>
                                                         <connections>
-                                                            <action selector="changeRate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Il4-xH-PlL"/>
+                                                            <action selector="resetLows:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0I-7x-cQN"/>
                                                         </connections>
-                                                    </slider>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLG-uX-dL5">
-                                                <rect key="frame" x="0.0" y="121.5" width="311" height="41"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="tintColor" red="0.59607843140000005" green="0.45882352939999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Reset"/>
-                                                <connections>
-                                                    <action selector="resetRate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezT-7L-eDt"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V3N-Kw-HX9">
+                                                <rect key="frame" x="109" y="0.0" width="93" height="162.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mids" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-Y9-hYI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DG-T7-yAz">
+                                                        <rect key="frame" x="0.0" y="46.5" width="93" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EUE-cv-FdN">
+                                                        <rect key="frame" x="0.0" y="83.5" width="93" height="30"/>
+                                                        <subviews>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-24" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="DeF-2j-Jpf">
+                                                                <rect key="frame" x="-2" y="0.0" width="97" height="31"/>
+                                                                <color key="tintColor" red="0.72156862749999995" green="0.30980392159999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <connections>
+                                                                    <action selector="changeMids:" destination="BYZ-38-t0r" eventType="valueChanged" id="h7T-c7-0Nx"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-WU-bwb">
+                                                        <rect key="frame" x="0.0" y="121.5" width="93" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.72156862749999995" green="0.30980392159999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Reset"/>
+                                                        <connections>
+                                                            <action selector="resetMids:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8U0-Vz-VDh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="fMf-Oc-X4Y"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M7Q-xz-fA3">
+                                                <rect key="frame" x="218" y="0.0" width="93" height="162.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvw-n0-3gi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFB-v3-WuE">
+                                                        <rect key="frame" x="0.0" y="46.5" width="93" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AgU-xI-bIJ">
+                                                        <rect key="frame" x="0.0" y="83.5" width="93" height="30"/>
+                                                        <subviews>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-24" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="IKy-U9-aIq">
+                                                                <rect key="frame" x="-2" y="0.0" width="97" height="31"/>
+                                                                <color key="tintColor" red="0.41673881075478858" green="0.81563836336135864" blue="0.33380833884805167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <connections>
+                                                                    <action selector="changeHighs:" destination="BYZ-38-t0r" eventType="valueChanged" id="cmH-NE-pkj"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIL-ZE-7En">
+                                                        <rect key="frame" x="0.0" y="121.5" width="93" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" red="0.41673881080000003" green="0.81563836339999995" blue="0.33380833879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Reset"/>
+                                                        <connections>
+                                                            <action selector="resetHighs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i12-7R-Kf3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
+                                        <viewLayoutGuide key="safeArea" id="3f8-WP-fkj"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-bc-Z2D">
                                         <rect key="frame" x="0.0" y="357" width="311" height="209.5"/>
@@ -170,6 +297,12 @@
                     <connections>
                         <outlet property="currentTimeLabel" destination="SgO-iI-Dgm" id="B9Q-nz-htV"/>
                         <outlet property="durationTimeLabel" destination="cWp-4h-jRP" id="XRH-LF-u5l"/>
+                        <outlet property="highsLabel" destination="kFB-v3-WuE" id="0bP-OG-idM"/>
+                        <outlet property="highsSlider" destination="IKy-U9-aIq" id="1XY-aQ-q6w"/>
+                        <outlet property="lowsLabel" destination="VO8-AZ-OXY" id="u6g-BZ-mT5"/>
+                        <outlet property="lowsSlider" destination="hii-go-BVi" id="tT2-Nb-R43"/>
+                        <outlet property="midsLabel" destination="3DG-T7-yAz" id="i0v-xQ-05w"/>
+                        <outlet property="midsSlider" destination="DeF-2j-Jpf" id="SZV-2b-HhI"/>
                         <outlet property="pitchLabel" destination="1Sf-gN-iNW" id="Jd2-bm-mph"/>
                         <outlet property="pitchSlider" destination="ZgN-gD-MUl" id="IkG-6F-z9y"/>
                         <outlet property="playButton" destination="6Rt-X4-cTN" id="i6x-P2-CHk"/>

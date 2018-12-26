@@ -23,7 +23,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var pitchSlider: UISlider!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var progressSlider: ProgressSlider!
-    
+    @IBOutlet weak var lowsLabel: UILabel!
+    @IBOutlet weak var lowsSlider: UISlider!
+    @IBOutlet weak var highsLabel: UILabel!
+    @IBOutlet weak var highsSlider: UISlider!
+    @IBOutlet weak var midsLabel: UILabel!
+    @IBOutlet weak var midsSlider: UISlider!
+
     // Streamer props
     lazy var streamer: TimePitchStreamer = {
         let streamer = TimePitchStreamer()
@@ -45,6 +51,9 @@ class ViewController: UIViewController {
         // Reset the pitch and rate
         resetPitch(self)
         resetRate(self)
+        resetLows(self)
+        resetHighs(self)
+        resetMids(self)
         
         /// Download
         let url = URL(string: "https://cdn.fastlearner.media/bensound-rumble.mp3")!
@@ -132,6 +141,33 @@ class ViewController: UIViewController {
         pitchSlider.value = pitch
     }
     
+    @IBAction func changeLows(_ sender: Any?) {
+        let gain = round(lowsSlider.value)
+        lowsLabel.text = String(format: "%i db", Int(gain))
+        streamer.lowGain = gain
+    }
+    @IBAction func resetLows(_ sender: Any) {
+        lowsSlider.value = 0
+        changeLows(nil)
+    }
+    @IBAction func changeHighs(_ sender: Any?) {
+        let gain = round(highsSlider.value)
+        highsLabel.text = String(format: "%i db", Int(gain))
+        streamer.highGain = gain
+    }
+    @IBAction func resetHighs(_ sender: Any) {
+        highsSlider.value = 0
+        changeHighs(nil)
+    }
+    @IBAction func changeMids(_ sender: Any?) {
+        let gain = round(midsSlider.value)
+        midsLabel.text = String(format: "%i db", Int(gain))
+        streamer.midGain = gain
+    }
+    @IBAction func resetMids(_ sender: Any) {
+        midsSlider.value = 0
+        changeMids(nil)
+    }
     /// MARK: - Change Rate
     
     @IBAction func changeRate(_ sender: UISlider) {
